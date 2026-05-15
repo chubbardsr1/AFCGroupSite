@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+  <defs>
+    <style><![CDATA[
+      .afg { font-family: "URW Bookman", "Noto Serif Display", "Georgia", serif; font-style: italic; font-weight: 700; fill: #0D2238; }
+      .aksarben { font-family: "Noto Serif Display", "Georgia", serif; font-weight: 500; letter-spacing: 30px; fill: #0D2238; }
+      .group { font-family: "Inter", "Lato", "Arial", sans-serif; font-weight: 500; letter-spacing: 24px; fill: #0D2238; }
+      .tagline { font-family: "Inter", "Lato", "Arial", sans-serif; font-size: 46px; font-weight: 400; letter-spacing: 4px; fill: #B7924E; }
+    ]]></style>
+  </defs>
+  <g id="AFG-logo" transform="translate(0,0)">
+    <!-- AFG mark -->
+    <text x="700" y="300" text-anchor="middle" class="afg" font-size="300">AFG</text>
+    <!-- gold horizon arc, placed behind the lower part of AFG -->
+    <path d="M125 420 C 360 300, 1040 300, 1275 420" stroke="#B7924E" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <!-- company name -->
+    <line x1="155" y1="515" x2="245" y2="515" stroke="#B7924E" stroke-width="6" stroke-linecap="round"/>
+    <line x1="1155" y1="515" x2="1245" y2="515" stroke="#B7924E" stroke-width="6" stroke-linecap="round"/>
+    <text x="700" y="555" text-anchor="middle" class="aksarben" font-size="80">AKSARBEN</text>
+    <text x="700" y="660" text-anchor="middle" class="group" font-size="58">FINANCIAL GROUP</text>
+  <text x="700" y="760" text-anchor="middle" class="tagline">Guidance. Protection. Clarity.</text>
+  </g>
+</svg>

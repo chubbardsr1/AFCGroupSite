@@ -1,0 +1,405 @@
+:root {
+  --navy: #0D2238;
+  --navy-soft: #143B78;
+  --gold: #B7924E;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header / Top Bar */
+
+.top-bar {
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 0;
+}
+
+.top-bar-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  width: 82px;
+  height: auto;
+  display: block;
+  background: var(--white);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.brand {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--navy-soft));
+  color: var(--white);
+  padding: 72px 24px;
+}
+
+.hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.08;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 0 28px;
+  color: #e5eefc;
+}
+
+.button-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #111827;
+}
+
+.btn-secondary {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: var(--white);
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  color: var(--white);
+}
+
+.hero-card ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+/* Main Layout */
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section h2 {
+  color: var(--navy);
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--navy);
+}
+
+.contact-panel {
+  background: var(--white);
+  border-left: 6px solid var(--gold);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.license-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 8px;
+  vertical-align: top;
+}
+
+th {
+  color: var(--navy);
+  font-weight: 800;
+  background: #f9fafb;
+}
+
+/* Disclaimer */
+
+.disclaimer {
+  font-size: 0.86rem;
+  color: var(--muted);
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 28px;
+}
+
+/* Footer */
+
+footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 28px 24px;
+  font-size: 0.9rem;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  color: #dbeafe;
+}
+
+.footer-inner a {
+  color: var(--white);
+}
+
+/* Card Scan / Intake Router Page */
+
+.scan-page {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px;
+  background:
+    radial-gradient(circle at top left, rgba(183, 146, 78, 0.12), transparent 34%),
+    linear-gradient(135deg, #f8fafc, #eef2f7);
+}
+
+.scan-card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.scan-card h1 {
+  color: var(--navy);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 12px;
+}
+
+.scan-intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 28px;
+}
+
+.scan-actions {
+  display: grid;
+  gap: 14px;
+}
+
+.scan-button {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.scan-button span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.scan-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.09);
+}
+
+.scan-button-primary {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.scan-button-primary span {
+  color: #dbeafe;
+}
+
+.scan-button-secondary {
+  border-color: var(--gold);
+}
+
+.scan-note {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .top-bar-inner {
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+  }
+
+  .site-logo {
+    width: 72px;
+  }
+
+  .brand {
+    font-size: 17px;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-inner,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 56px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .scan-card {
+    padding: 28px 22px;
+  }
+}
